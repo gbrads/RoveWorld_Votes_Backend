@@ -6,7 +6,9 @@
   "tweetVotes": {
     "1636734477949911042": {
       "team": "MTC",
-      "score": 3
+      "score": 3,
+      "locked": true,
+      "comment": "meme"
     },
     "1636748101430984704": {
       "team": "TMZ",
