@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 
 const app = express();
-const port = 3001;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -40,6 +39,7 @@ app.post('/votes', (req, res) => {
     res.json(newData);
   });  
 
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
-});
+  const port = process.env.PORT || 7001;
+  app.listen(port, () => {
+    console.log(`Server started on port ${port}`);
+  });
